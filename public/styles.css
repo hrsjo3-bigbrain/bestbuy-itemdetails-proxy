@@ -1,0 +1,66 @@
+body {
+  margin: 0;
+}
+
+#header, #footer {
+  width: 100%;
+}
+
+#footer {
+  margin-top: 100px;
+}
+
+/* #bestbuy {
+  display: flex;
+  justify-content: flex-end;
+  font-family: 'Roboto', sans-serif;
+  overflow: scroll;
+  flex-direction: column;
+  width: 1185px;
+} */
+
+#grid-container {
+  display: flex;
+  justify-content: center;
+}
+
+#portal {
+  font-family: 'Roboto', sans-serif;
+}
+
+#bestbuy {
+  font-family: 'Roboto', sans-serif;
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: 1185px 355px;
+  grid-template-rows: 1021px;
+  grid-template-areas:
+    "product-details similar-items";
+
+}
+
+#product-details {
+  grid-area: product-details;
+}
+
+#similar-items {
+  grid-area: similar-items;
+}
+
+#similar-items img {
+  display: block;
+  border: none;
+}
+
+
+#service2 {
+  /* position: absolute; */
+  width: 383px;
+  /* margin-top: 400px;
+  margin-right: 50px; */
+}
+
+#product-details {
+  display: flex;
+  justify-content: space-evenly;
+}
