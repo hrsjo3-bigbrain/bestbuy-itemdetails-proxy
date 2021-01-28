@@ -30,18 +30,30 @@ body {
 
 #bestbuy {
   font-family: 'Roboto', sans-serif;
-  margin-top: 50px;
   display: grid;
   grid-template-columns: 1185px 355px;
-  grid-template-rows: 1021px;
+  grid-template-rows: 1500px;
   grid-template-areas:
     "product-details similar-items";
+}
 
+#left-column {
+  grid-area: product-details;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 
 #product-details {
-  grid-area: product-details;
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 25px;
 }
+
+#people-also-viewed {
+  margin-top: 50px;
+}
+
 
 #similar-items {
   grid-area: similar-items;
@@ -52,15 +64,13 @@ body {
   border: none;
 }
 
+#reviews {
+  margin-top: 50px;
+}
 
 #service2 {
   /* position: absolute; */
   width: 383px;
   /* margin-top: 400px;
   margin-right: 50px; */
-}
-
-#product-details {
-  display: flex;
-  justify-content: space-evenly;
 }
